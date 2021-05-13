@@ -10,11 +10,13 @@
       <tr bgcolor="#9acd32">
       <th>Title</th>
         <th>Artist</th>
+        <xsl:for-each select = "catalog/cd">
       </tr>
       <tr>
-        <td><xsl:value-of select="catalog/cd/title"/></td>
-        <td><xsl:value-of select="catalog/cd/artist"/></td>
+        <td><xsl:value-of select="title"/></td>
+        <td><xsl:value-of select="artist"/></td>
       </tr>
+        </xsl:for-each>
     </table>
   </body>
   </html>
